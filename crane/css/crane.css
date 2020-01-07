@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Century Gothic;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/back.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 160px;
+	height: 50px;
+	padding-top: 25px;
+	padding-left: 30px
+}
+.main{
+	max-width: 1200px
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title h1{
+	color: #fff;
+	font-size: 50px;
+}
+.title h2{
+	color: #fff;
+	font-size: 45px;
+}
+.title h3{
+	color: #fff;
+	font-size: 40px;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .logo {
+    width: 80%;
+    padding: 0;
+  }
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main, .logo, .title {
+    width: 100%;
+  }
